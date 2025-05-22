@@ -1,0 +1,50 @@
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom"; 
+import { CartContext } from "../context/CartContext";
+import '../css/cart.css';
+
+const Cart = () => {
+  const {
+    cartItems,
+    removeFromCart,
+    increaseQuantity,
+    decreaseQuantity,
+    clearCart,
+    getTotalPrice
+  } = useContext(CartContext);
+
+  const navigate = useNavigate(); 
+  const totalPrice = getTotalPrice().toFixed(2);
+
+  return (
+    <div>
+      <h2>Shopping Cart</h2>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <div>
+          <ul>
+            {cartItems.map((item) => (
+              <li key={item.id}>
+                <img src={item.thumbnail || item.image} alt={item.title} width="200" height="200" />
+                <span>{item.title} - ${item.price} x {item.quantity}</span>
+                <div>
+                  <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => increaseQuantity(item.id)}>+</button>
+                </div>
+                <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              </li>
+            ))}
+          </ul>
+          <h3>Total Price: ${totalPrice}</h3>
+          <button onClick={clearCart}>Clear Cart</button>
+          <button onClick={() => navigate('/checkout')}>Checkout</button> {/* <-- Checkout Button */}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Cart;
+
