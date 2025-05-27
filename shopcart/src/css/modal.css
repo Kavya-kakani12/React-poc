@@ -1,7 +1,6 @@
-/* Modal */
 .modal-overlay {
-    position: fixed; 
-  
+    position: fixed;
+ 
     top: 0;
     left: 0;
     width: 100%;
@@ -12,7 +11,7 @@
     align-items: center;
     /* z-index: 1000; */
   }
-  
+ 
   .modal-content {
     margin-top: -10000px;
     background: #fff;
@@ -20,12 +19,12 @@
     border-radius: 12px;
     width: 90%;
     max-width: 500px;
-    position: absolute; 
+    position: absolute;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    animation: fadeIn 0.3s ease-in-out; 
+    animation: fadeIn 0.3s ease-in-out;
     z-index: 1001;
   }
-  
+ 
   /* Close button */
   .close-button {
     position: absolute;
@@ -37,8 +36,8 @@
     cursor: pointer;
     color: #333;
   }
-  
+ 
   .close-button:hover {
     color: #000;
   }
-  
+ 

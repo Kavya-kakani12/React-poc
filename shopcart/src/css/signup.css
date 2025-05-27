@@ -1,21 +1,23 @@
+/* Signup.css */
+ 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f2f5;
     /* background: url('https://tse3.mm.bing.net/th/id/OIP.DA7FsKVMVMqpCLcE2uR4hAAAAA?rs=1&pid=ImgDetMain');  */
-    background: url('https://img.freepik.com/premium-vector/online-shopping-with-3d-illustration-shopping-supplies_269039-855.jpg?w=740'); 
+    background: url('https://img.freepik.com/premium-vector/online-shopping-with-3d-illustration-shopping-supplies_269039-855.jpg?w=740');
     background-size: cover;
     color: #2e2e2e;
   }
-  
+ 
   .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  
+ 
   .signup-form {
     background-color: #ffffff;
     padding: 2rem;
@@ -24,13 +26,13 @@ body {
     width: 100%;
     max-width: 400px;
   }
-  
+ 
   .signup-form h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #333;
   }
-  
+ 
   .signup-form input {
     width: 100%;
     padding: 0.75rem;
@@ -41,18 +43,18 @@ body {
     box-sizing: border-box;
     transition: border-color 0.3s ease;
   }
-  
+ 
   .signup-form input:focus {
     border-color: #007bff;
     outline: none;
   }
-  
+ 
   .signup-form .error {
     color: red;
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
   }
-  
+ 
   .signup-form button {
     width: 100%;
     padding: 0.75rem;
@@ -64,8 +66,10 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+ 
   .signup-form button:hover {
     background-color: #0056b3;
   }
+ 
+ 
   

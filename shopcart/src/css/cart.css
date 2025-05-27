@@ -1,4 +1,4 @@
- /* Cart.css */
+ /* Cart.css
 
  .cart-container {
     max-width: 800px;
@@ -78,4 +78,135 @@
   }
   
   
-  
+   */
+
+
+
+ 
+.cart-page {
+  min-height: 100vh;
+  background-image: url('https://img.freepik.com/premium-photo/online-shop-advertisement-featuring-laptop-as-background-designed-with-ample-copy-space-highlight-products-promotions-effectively_1089666-2473.jpg?ga=GA1.1.1687703720.1732510204&semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 2rem;
+}
+ 
+ 
+.cart-wrapper {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+ 
+.cart-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #00796b;
+  margin-bottom: 2rem;
+}
+ 
+.cart-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+ 
+.cart-items-list {
+  list-style: none;
+  padding: 0;
+}
+ 
+.cart-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+ 
+.cart-item-box img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+ 
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ 
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+ 
+.cart-item-controls button {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  background-color: #26a69a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.cart-item-controls button:hover {
+  background-color: #00796b;
+}
+ 
+.cart-remove-btn {
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.cart-remove-btn:hover {
+  background-color: #c62828;
+}
+ 
+.cart-total {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: #004d40;
+}
+ 
+.cart-signout-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+ 
+.cart-signout-btn {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+.cart-signout-btn:hover {
+  background-color: #e64a19;
+}
+ 
+ 

@@ -1,6 +1,4 @@
-/* checkout.css */
-
-.checkout-container {
+/* .checkout-container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
@@ -98,4 +96,120 @@
   border: 1px solid #b2f5ea;
   border-radius: 8px;
   color: #2f855a;
-}
+} */
+
+ .checkout-container {
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/premium-photo/online-shop-advertisement-featuring-laptop-as-background-designed-with-ample-copy-space-highlight-products-promotions-effectively_1089666-2473.jpg?ga=GA1.1.1687703720.1732510204&semt=ais_hybrid&w=740');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 2rem;
+  }
+ 
+  .checkout-wrapper {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+ 
+  .checkout-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #00796b;
+    margin-bottom: 2rem;
+  }
+ 
+  .checkout-items-list {
+    list-style: none;
+    padding: 0;
+  }
+ 
+  .checkout-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+ 
+  .checkout-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 1rem;
+  }
+ 
+  .checkout-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #333;
+  }
+ 
+  .checkout-summary {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #004d40;
+  }
+ 
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+ 
+  .checkout-form input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+ 
+  .checkout-form input:focus {
+    border-color: #0078d4;
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2);
+    outline: none;
+  }
+ 
+  .checkout-form button {
+    padding: 0.9rem;
+    font-size: 1rem;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .checkout-form button:hover {
+    background-color: #005fa3;
+  }
+ 
+  .checkout-success {
+    text-align: center;
+    padding: 3rem;
+    background-color: #e6ffed;
+    border: 1px solid #b2f5ea;
+    border-radius: 12px;
+    color: #2f855a;
+    max-width: 600px;
+    margin: 4rem auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+ 
+ 
