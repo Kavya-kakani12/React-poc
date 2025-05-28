@@ -32,9 +32,6 @@ import Cart from './components/cart';
  
 import Checkout from './components/checkout';
  
- 
- 
- 
 const App = () => {
   return (
     <Router>

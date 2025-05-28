@@ -1,29 +1,27 @@
-/* Base styles */
-html,body {
-    height: 30%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://img.freepik.com/premium-vector/online-shopping-with-3d-illustration-shopping-supplies_269039-855.jpg?w=740');
-    background-size: cover;
-    color: #2e2e2e;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://img.freepik.com/premium-vector/online-shopping-with-3d-illustration-shopping-supplies_269039-855.jpg?w=740') no-repeat center center fixed;
+  background-size: cover;
+  color: #2e2e2e;
+  overflow-x: hidden;
+}
  
-  /* Container */
-  .container {
-    width: 100%;
-    max-width: 1000px;
-    padding: 40px 30px;
-    margin: 40px auto;
-    background-color:rgb(148, 230, 227);
-    border-radius: 16px;
-    box-shadow: 0 12px 36px rgba(115, 237, 237, 0.15);
-    backdrop-filter: blur(6px);
-    transition: box-shadow 0.3s ease;
-    /* position: absolute; */
-  }
- 
-  .container:hover {
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 30px;
+  margin: 40px auto;
+  background-color: rgba(147, 233, 230, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(115, 237, 237, 0.15);
+  backdrop-filter: blur(6px);
+  transition: box-shadow 0.3s ease;
+}
+ .container:hover {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   }
  
