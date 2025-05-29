@@ -75,3 +75,61 @@ const ProductCard = ({
 };
  
 export default ProductCard;
+
+// import React, { useContext } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import { CartContext } from '../context/CartContext';
+// import EditProduct from './editproduct';
+ 
+// const ProductCard = ({
+//   product,
+//   onDelete,
+//   onEdit,
+//   isEditing,
+//   onChange,
+//   onUpdate,
+//   onCancelEdit,
+//   cardRef
+// }) => {
+//   const navigate = useNavigate();
+//   const { addToCart } = useContext(CartContext);
+ 
+//   const handleAddToCart = () => {
+//     addToCart(product);
+//     navigate('/cart');
+//   };
+ 
+//   const imageUrl = product.image || product.images?.[0] || 'https://via.placeholder.com/180';
+ 
+//   return (
+//     <li className="product-card" ref={cardRef}>
+//       {isEditing ? (
+//         <div className="inline-edit-modal">
+//           <EditProduct
+//             product={product}
+//             onChange={onChange}
+//             onUpdate={onUpdate}
+//           />
+//           <button onClick={onCancelEdit}>Cancel</button>
+//         </div>
+//       ) : (
+//         <>
+//           <h2>{product.name}</h2>
+//           <p>{product.description}</p>
+//           <p>Price: ${product.price}</p>
+//           <img
+//             src={imageUrl}
+//             alt={`${product.name}`}
+//             width="180"
+//             height="180"
+//           />
+//           <button onClick={() => onDelete(product.id)}>Delete</button>
+//           <button onClick={(e) => onEdit(e, product)}>Edit</button>
+//           <button onClick={handleAddToCart}>Add to Cart</button>
+//         </>
+//       )}
+//     </li>
+//   );
+// };
+ 
+// export default ProductCard;

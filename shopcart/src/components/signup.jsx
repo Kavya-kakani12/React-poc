@@ -9,7 +9,7 @@ const Signup = () => {
     password: ''
   });
  
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({});    
   const navigate = useNavigate();
  
   const validate = () => {

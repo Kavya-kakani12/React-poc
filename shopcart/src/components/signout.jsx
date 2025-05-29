@@ -5,9 +5,9 @@ const SignoutButton = () => {
   const navigate = useNavigate();
 
   const handleSignout = () => {
-    localStorage.removeItem('token'); // Clear login token or session
+    localStorage.removeItem('token'); 
     alert('Signout successfully!');
-    navigate('/'); // Redirect to home or login page
+    navigate('/'); 
   };
 
   return (
